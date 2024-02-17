@@ -34,6 +34,8 @@ filetype plugin indent on
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+map <leader>r :NERDTreeFind<cr>
+
 
 "===== leaderf config ====="
 let g:Lf_ShortcutF = '<C-P>'
