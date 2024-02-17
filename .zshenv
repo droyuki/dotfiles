@@ -1,10 +1,5 @@
 # export CHOKIDAR_USEPOLLING=true # for node watch
 
-## NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 export PATH=$HOME/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin:/opt/apache-maven-3.8.4/bin:/home/wilson_liao/.local/bin:/usr/local/go/bin:${KREW_ROOT:-$HOME/.krew}/bin:$PATH
 export SKAFFOLD_UPDATE_CHECK=false
 export http_proxy=http://10.160.3.88:8080

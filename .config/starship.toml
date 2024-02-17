@@ -26,6 +26,9 @@ truncation_length = 5
 truncate_to_repo = false
 truncation_symbol = ".../"
 
+[package]
+disabled=true
+
 [aws]
 disabled=true
 
