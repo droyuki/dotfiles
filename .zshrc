@@ -52,7 +52,12 @@ bindkey "^[[1;5D" backward-word
 precmd_functions+=(set_win_title)
 
 # some more ls aliases
-alias ls='ls --color=auto'
+if [ $_distro = ubuntu ]; then
+    alias ls='ls --color=auto'
+else # mac
+    alias ls='ls -G'
+fi
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
