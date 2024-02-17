@@ -78,7 +78,8 @@ set laststatus=2                                                                
 set fileencoding=utf-8 encoding=utf-8                                           "Set utf-8 encoding on write
 set wrap                                                                        "Enable word wrap
 set linebreak                                                                   "Wrap lines at convenient points
-set listchars=eol:⏎,trail:·,tab:\|\                                                  "Set trails for tabs and spaces
+"set listchars=eol:⏎,trail:·,tab:\|\                                                  "Set trails for tabs and spaces
+set listchars=trail:·,tab:\|\                                                  "Set trails for tabs and spaces
 set list                                                                        "Enable listchars
 set lazyredraw                                                                  "Do not redraw on registers and macros
 set background=dark                                                             "Set background to dark

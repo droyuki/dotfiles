@@ -1,6 +1,17 @@
 #!/bin/bash
 
 p=$(pwd)
-ln -s -i $p/.vimrc ~/.vimrc
-ln -s -i $p/.screenrc ~/.screenrc
-ln -s -i $p/.tigrc ~/.tigrc
+
+files=(
+    .customenv
+    .vimrc
+    .screenrc
+    .tigrc
+    .zshrc
+    .config/starship.toml
+)
+
+for f in "${files[@]}"
+do
+    ln -s -i $p/$f ~/$f
+done
