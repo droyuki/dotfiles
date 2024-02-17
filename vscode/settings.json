@@ -1,29 +1,86 @@
 // 將您的設定放入此檔案中以覆寫預設值
 {
-	"editor.fontSize": 13,
-	"editor.insertSpaces": false,
-	"editor.renderIndentGuides": true,
-	"editor.detectIndentation": false,
-	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-	"files.autoSave": "afterDelay",
-	"files.autoSaveDelay": 3000,
-	"editor.renderWhitespace": "boundary",
-	"window.showFullPath": true,
-	"eslint.enable": true,
-	"eslint.run": "onSave",
-	"window.zoomLevel": 0,
-	"typescript.check.tscVersion": false,
-	"workbench.editor.enablePreview": false,
-	"workbench.editor.enablePreviewFromQuickOpen": false,
-	"typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
-	"editor.renderLineHighlight": "all",
-	"workbench.statusBar.visible": true,
-	"files.watcherExclude": {
-		"**/.git/objects/**": true,
-		"**/node_modules/**": true
-	},
-	"search.exclude": {
-		"**/node_modules": true,
-		"**/bower_components": true
-	}
+    "editor.fontSize": 14,
+    "editor.minimap.maxColumn": 65,
+    "files.eol": "\n",
+    "editor.renderWhitespace": "none",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.statusBar.visible": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+    "http.proxy": "http://proxy.cht.com.tw:8080",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "editor.minimap.renderCharacters": false,
+    "path-intellisense.autoSlashAfterDirectory": false,
+    "sync.gist": "fd8ecd55078ffbf39b5b31730da9da2a",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.forceDownload": false,
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "files.associations": {
+        "*.cql": "json"
+    },
+    "editor.tabCompletion": "on",
+    "workbench.colorTheme": "Charcoal Oceanic Next",
+    "editor.quickSuggestionsDelay": 1,
+    "editor.renderControlCharacters": true,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#80CBC4",
+        "list.activeSelectionForeground": "#80CBC4",
+        "list.inactiveSelectionForeground": "#80CBC4",
+        "list.highlightForeground": "#80CBC4",
+        "scrollbarSlider.activeBackground": "#80CBC450",
+        "editorSuggestWidget.highlightForeground": "#80CBC4",
+        "textLink.foreground": "#80CBC4",
+        "progressBar.background": "#80CBC4",
+        "pickerGroup.foreground": "#80CBC4",
+        "tab.activeBorder": "#80CBC4",
+        "notificationLink.foreground": "#80CBC4",
+        "editorWidget.resizeBorder": "#80CBC4",
+        "editorWidget.border": "#80CBC4",
+        "settings.modifiedItemIndicator": "#80CBC4",
+        "settings.headerForeground": "#80CBC4",
+        "panelTitle.activeBorder": "#80CBC4",
+        "breadcrumb.activeSelectionForeground": "#80CBC4",
+        "menu.selectionForeground": "#80CBC4",
+        "menubar.selectionForeground": "#80CBC4",
+        "editorIndentGuide.background": "#3c3d42"
+    },
+    "material-icon-theme.files.associations": {
+        "*.react.js": "react"
+    },
+    "materialTheme.accent": "Teal",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "material-icon-theme.activeIconPack": "react",
+    "fontAwesomeAutocomplete.version": "4",
+    "fontAwesomeAutocomplete.patterns": [
+        "**/*.html",
+        "**/*.js"
+    ],
+    "javascript.validate.enable": false,
+    "editor.cursorBlinking": "expand",
+    "editor.gotoLocation.multiple": "goto",
+    "gitlens.mode.active": "zen",
+    "workbench.iconTheme": "material-icon-theme",
+    // "eslint.runtime": "C:\\ProgramData\\nvm\\v11.14.0\\node.exe",
+    "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\cmd.exe",
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "workbench.statusBar.feedback.visible": false,
+    "ActiveFileInStatusBar.fullpath": false,
+    "editor.renderLineHighlight": "all",
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.trace.server": "messages",
+    "files.autoSave": "afterDelay",
+    "prettier.eslintIntegration": true
 }
