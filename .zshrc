@@ -72,6 +72,7 @@ alias ks='kubectl -n kube-system'
 alias ku='kubectl config use-context'
 alias kd='kubectl config unset current-context'
 
+alias vim='nvim'
 
 eval "$(starship init zsh)"
 

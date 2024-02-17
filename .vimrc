@@ -37,7 +37,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<cr>
 
 " auto open/quit nerdtree
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd VimEnter * wincmd p
 
