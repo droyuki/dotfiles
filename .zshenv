@@ -2,4 +2,4 @@
 export SKAFFOLD_UPDATE_CHECK=false
 
 # make homebrew bin before system bin
-export PATH="/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"

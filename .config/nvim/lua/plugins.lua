@@ -4,23 +4,38 @@ if (not status) then
   return
 end
 
+vim.cmd [[filetype plugin on]]
 vim.cmd [[packadd packer.nvim]]
 
 
 packer.startup(function(use)
-  use 'wbthomason/packer.nvim'
+  use 'wbthomason/packer.nvim' -- Package management
   use 'nvim-lua/plenary.nvim' -- Common utilities
+  use "EdenEast/nightfox.nvim" -- Color scheme
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
   }
 
-  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-
-  -- nvim cmp
+  -- LSP configs
+  use 'neovim/nvim-lspconfig' 
+  use({
+   "glepnir/lspsaga.nvim",
+   branch = "main",
+   config = function()
+     local saga = require("lspsaga")
+     saga.init_lsp_saga({})
+   end,
+  })
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
   use 'hrsh7th/nvim-cmp' -- Completion
+  use 'L3MON4D3/LuaSnip'
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
+
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
 
   -- fuzzy find and sidebar
   use {

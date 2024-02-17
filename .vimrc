@@ -1,17 +1,17 @@
 set nocompatible "ignore legacy vi configs
 call plug#begin()
 
-Plug 'easymotion/vim-easymotion'
-Plug 'preservim/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'Yggdroot/LeaderF'
-Plug 'jiangmiao/auto-pairs'
-Plug 'vim-airline/vim-airline'
-Plug 'airblade/vim-gitgutter'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'easymotion/vim-easymotion'
+"Plug 'preservim/nerdtree'
+"Plug 'jistr/vim-nerdtree-tabs'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'Yggdroot/LeaderF'
+"Plug 'jiangmiao/auto-pairs'
+"Plug 'vim-airline/vim-airline'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'pangloss/vim-javascript'
+"Plug 'mxw/vim-jsx'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 

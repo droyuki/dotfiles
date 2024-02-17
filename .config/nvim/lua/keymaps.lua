@@ -15,3 +15,7 @@ map('n', '<space>','<cmd>:HopWord<cr>')
 -- map <C-/> to toggle comment
 map('v', '<C-/>', '<leader>c<space>', { noremap = false })
 map('n', '<C-/>', '<leader>c<space>', { noremap = false })
+
+map('n', '<leader>kf','<cmd>:Prettier<cr>')
+map('v', '<leader>kf','<cmd>:Prettier<cr>')
+
