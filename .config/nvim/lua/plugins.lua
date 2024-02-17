@@ -9,31 +9,32 @@ vim.cmd [[packadd packer.nvim]]
 
 
 packer.startup(function(use)
-  use 'wbthomason/packer.nvim' -- Package management
-  use 'nvim-lua/plenary.nvim' -- Common utilities
-  use "EdenEast/nightfox.nvim" -- Color scheme
+  use 'wbthomason/packer.nvim' -- package management
+  use 'nvim-lua/plenary.nvim' -- common utilities
+  use "EdenEast/nightfox.nvim" -- color scheme
+
+  -- color highlight
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
   }
 
-  -- LSP configs
+  -- LSP 
   use 'neovim/nvim-lspconfig' 
-  use({
+  use {
    "glepnir/lspsaga.nvim",
    branch = "main",
-   config = function()
-     local saga = require("lspsaga")
-     saga.init_lsp_saga({})
-   end,
-  })
+  }
+
+
+  use 'folke/which-key.nvim' -- show keymap hint
+  use 'lukas-reineke/indent-blankline.nvim' -- show indent space
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-  use 'hrsh7th/nvim-cmp' -- Completion
-  use 'L3MON4D3/LuaSnip'
-  use('jose-elias-alvarez/null-ls.nvim')
-  use('MunifTanjim/prettier.nvim')
-
+  use 'hrsh7th/nvim-cmp' -- auto completion
+  use 'L3MON4D3/LuaSnip' -- snippet engine
+  use 'jose-elias-alvarez/null-ls.nvim' -- code action/hover
+  use 'MunifTanjim/prettier.nvim'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
 
@@ -41,12 +42,13 @@ packer.startup(function(use)
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
   }
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+  use {
+    'nvim-telescope/telescope-fzf-native.nvim',
+    run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+  }
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icons
-    },
+    requires = { 'kyazdani42/nvim-web-devicons' },
   }
 
   -- hop is a EasyMotion like plugin
@@ -55,17 +57,19 @@ packer.startup(function(use)
     branch = 'v2', -- optional but strongly recommended
   }
 
-  use 'preservim/nerdcommenter' -- auto comment
-  use {
+  -- auto comment
+  use 'preservim/nerdcommenter'
+  
+  -- status bar
+  use { 
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
+  -- tab bar
   use {
     'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
+    requires = { 'kyazdani42/nvim-web-devicons' }
   }
 
-  -- show indent space
-  use "lukas-reineke/indent-blankline.nvim"
 end)

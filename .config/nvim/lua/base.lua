@@ -1,3 +1,4 @@
+vim.g.mapleader = ','
 vim.cmd("colorscheme nightfox")
 
 vim.scriptencoding = 'utf-8'
