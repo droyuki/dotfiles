@@ -3,7 +3,6 @@ call plug#begin()
 
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/LeaderF'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -83,13 +82,16 @@ set laststatus=2                                                                
 set fileencoding=utf-8 encoding=utf-8                                           "Set utf-8 encoding on write
 set wrap                                                                        "Enable word wrap
 set linebreak                                                                   "Wrap lines at convenient points
-set listchars=tab:\ \ ,trail:·                                                  "Set trails for tabs and spaces
+set listchars=eol:⏎,trail:·,tab:\|\                                                  "Set trails for tabs and spaces
 set list                                                                        "Enable listchars
 set lazyredraw                                                                  "Do not redraw on registers and macros
 set background=dark                                                             "Set background to dark
 set hidden                                                                      "Hide buffers in background
 set splitright                                                                  "Set up new splits positions
-set scrolloff=3									"reserve 3 lines when page down"
+set scrolloff=3                                                                 "reserve 3 lines when page down"
+set expandtab                                                                   "use space instead of tab"
+set tabstop=2
+set shiftwidth=2
 set visualbell "blink cursor on error"
 
 syntax on                                                                       "turn on syntax highlighting
