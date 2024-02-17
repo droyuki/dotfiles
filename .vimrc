@@ -24,17 +24,20 @@ filetype plugin indent on
 "===== map leader key to backslash =====
 let mapleader = '\'
 
+"===== press - to jump to line end
+noremap - $
+
 "===== open terminal in current folder =====
 map <leader>t :let $VIM_DIR=expand('%:p:h')<CR>:term++rows=7<CR>cd $VIM_DIR<CR>
 
-"======= nerdtree shortcut ======="
+"======= nerdtree shortcut =======
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<cr>
 
 
-"===== leaderf config ====="
+"===== leaderf config =====
 let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
