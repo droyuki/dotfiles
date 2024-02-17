@@ -3,7 +3,7 @@ function set_win_title(){
 }
 
 function make_ssh_alias() {
-   for s in {49..155} 
+   for s in {49..174} 
    do
       code="alias ssh@$s=\"ssh wilson_liao@172.21.246.$s\""
       echo $code
@@ -73,3 +73,5 @@ eval "$(make_ssh_alias)"
 eval "$(starship init zsh)"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+cd ~/projects
