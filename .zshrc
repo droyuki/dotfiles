@@ -2,14 +2,6 @@ function set_win_title(){
     echo -ne "\033]0; $(basename "$PWD") \007"
 }
 
-function make_ssh_alias() {
-   for s in {49..174} 
-   do
-      code="alias ssh@$s=\"ssh wilson_liao@172.21.246.$s\""
-      echo $code
-   done
-}
-
 function colormap() {
   for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 }
@@ -80,7 +72,6 @@ alias ks='kubectl -n kube-system'
 alias ku='kubectl config use-context'
 alias kd='kubectl config unset current-context'
 
-eval "$(make_ssh_alias)"
 eval "$(starship init zsh)"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
