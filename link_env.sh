@@ -8,6 +8,7 @@ files=(
     .screenrc
     .tigrc
     .zshrc
+    .zshenv
     .config/starship.toml
 )
 
