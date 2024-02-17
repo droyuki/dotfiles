@@ -3,7 +3,6 @@
 p=$(pwd)
 
 files=(
-    .customenv
     .vimrc
     .screenrc
     .tigrc

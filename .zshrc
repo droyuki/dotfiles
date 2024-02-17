@@ -72,6 +72,7 @@ alias ks='kubectl -n kube-system'
 alias ku='kubectl config use-context'
 alias kd='kubectl config unset current-context'
 
+
 eval "$(starship init zsh)"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
