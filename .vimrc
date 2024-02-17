@@ -1,7 +1,6 @@
 set nocompatible
 call plug#begin()
 
-Plug 'VundleVim/Vundle.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -30,6 +29,9 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"===== map leader key to backslash =====
+let mapleader = '\'
+
 "======= nerdtree shortcut ======="
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -43,10 +45,11 @@ let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
 
 "===== YouCompleteMe====="
-let g:ycm_python_binary_path='usr/bin/python3'
+let g:ycm_python_binary_path='/usr/lib/python3.8'
 
 "===== easymotion=====
-map <leader>e <Plug>(easymotion-prefix)
+map <Space> <Plug>(easymotion-bd-w)
+
 
 "=============== GUI options ==================
 
