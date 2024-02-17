@@ -1,4 +1,4 @@
-set nocompatible
+set nocompatible "ignore legacy vi configs
 call plug#begin()
 
 Plug 'easymotion/vim-easymotion'
@@ -19,17 +19,13 @@ filetype plugin indent on
 "To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
 "===== map leader key to backslash =====
 let mapleader = '\'
+
+"===== open terminal in current folder =====
+map <leader>t :let $VIM_DIR=expand('%:p:h')<CR>:term++rows=7<CR>cd $VIM_DIR<CR>
 
 "======= nerdtree shortcut ======="
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -61,7 +57,7 @@ set guifont=FiraCode\ Nerd\ Font\ Medium\ 12                     "font setup
 set linespace=10                                                                "Set lineheight in gvim
 
 " ================ General Config ====================
-
+set splitbelow                                                                  "split windows below"
 set t_Co=256                                                                    "Set 256 colors
 set title                                                                       "change the terminal's title
 set number                                                                      "Line numbers are good
@@ -90,9 +86,9 @@ set hidden                                                                      
 set splitright                                                                  "Set up new splits positions
 set scrolloff=3                                                                 "reserve 3 lines when page down"
 set expandtab                                                                   "use space instead of tab"
-set tabstop=2
-set shiftwidth=2
-set visualbell "blink cursor on error"
+set tabstop=2                                                                   "tab size"
+set shiftwidth=2                                                                "indent with 2 spaces"
+set visualbell                                                                  "blink cursor on error"
 
 syntax on                                                                       "turn on syntax highlighting
 
