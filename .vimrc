@@ -57,7 +57,7 @@ set guifont=FiraCode\ Nerd\ Font\ Medium\ 12                     "font setup
 set linespace=10                                                                "Set lineheight in gvim
 
 " ================ General Config ====================
-set splitbelow                                                                  "split windows below"
+set splitbelow                                                                  "split windows below
 set t_Co=256                                                                    "Set 256 colors
 set title                                                                       "change the terminal's title
 set number                                                                      "Line numbers are good
@@ -84,11 +84,11 @@ set lazyredraw                                                                  
 set background=dark                                                             "Set background to dark
 set hidden                                                                      "Hide buffers in background
 set splitright                                                                  "Set up new splits positions
-set scrolloff=3                                                                 "reserve 3 lines when page down"
-set expandtab                                                                   "use space instead of tab"
-set tabstop=2                                                                   "tab size"
-set shiftwidth=2                                                                "indent with 2 spaces"
-set visualbell                                                                  "blink cursor on error"
+set scrolloff=3                                                                 "reserve 3 lines when page down
+set expandtab                                                                   "use space instead of tab
+set tabstop=2                                                                   "tab size
+set shiftwidth=2                                                                "indent with 2 spaces
+set visualbell                                                                  "blink cursor on error
 
 syntax on                                                                       "turn on syntax highlighting
 
